@@ -1,0 +1,22 @@
+
+.icon-search:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-bell:before { content: '\e802'; } /* '' */
+.icon-cog:before { content: '\e803'; } /* '' */
+.icon-chart-bar:before { content: '\e804'; } /* '' */
+.icon-credit-card:before { content: '\e805'; } /* '' */
+.icon-calendar:before { content: '\e806'; } /* '' */
+.icon-flash-outline:before { content: '\e807'; } /* '' */
+.icon-signal:before { content: '\e808'; } /* '' */
+.icon-droplet:before { content: '\e809'; } /* '' */
+.icon-briefcase:before { content: '\e80a'; } /* '' */
+.icon-wallet:before { content: '\e80b'; } /* '' */
+.icon-award:before { content: '\e80c'; } /* '' */
+.icon-bookmark:before { content: '\e80d'; } /* '' */
+.icon-clipboard:before { content: '\e80e'; } /* '' */
+.icon-home-outline:before { content: '\e80f'; } /* '' */
+.icon-exchange:before { content: '\f0ec'; } /* '' */
+.icon-desktop:before { content: '\f108'; } /* '' */
+.icon-bank:before { content: '\f19c'; } /* '' */
+.icon-cab:before { content: '\f1b9'; } /* '' */
+.icon-cc-visa:before { content: '\f1f0'; } /* '' */

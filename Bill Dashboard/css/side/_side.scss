@@ -1,0 +1,158 @@
+$mainColor: #60A9A2;
+$secColor: #506396;
+$font: 'Roboto', sans-serif;
+$mainFontColor: #ffffff;
+$secFontColor: #60636e;
+$background: #171721;
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text {
+    font-size: 1.5rem;
+    color: $mainFontColor;
+    font-family: $font;
+    margin: 10px 0;
+}
+.sec-text {
+    font-size: 0.8rem;
+    color: $secFontColor;
+    font-family: $font;
+}
+.prices {
+    font-size: 1rem;
+    color: #a3a8b9;
+    font-family: $font;
+}
+aside {
+    grid-area: aside;
+    width: 100%;
+    height: 75vmin;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    .card {
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+        background-color: $mainColor;
+        padding: 20px;
+        color: $mainFontColor;
+        font-family: $font;
+        position: relative;
+        margin: 0 auto;
+        box-shadow: 0 8px 10px 4px rgba($color: #000000, $alpha: 0.5);
+        h4 {
+            padding: 20px 0;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        div {
+            width: 50%;
+            @extend .center;
+            flex-direction: column;
+            align-items: start;
+            span {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 0.8rem;
+                color: #e7e7e7;
+                margin: 10px 0;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+            &:nth-of-type(2) {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                align-items: flex-end;
+                figure {
+                    width: 70px;
+                    height: 50px;
+                    padding: 10px 0;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        // object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+.sides {
+    width: 100%;
+    height: auto;
+    padding: 40px 10px;
+    @extend .center;
+    flex-direction: column;
+    > div {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        h2 {
+            @extend .main-text;
+        }
+        h3 {
+            @extend .sec-text;
+        }
+    }
+    > section {
+        width: 100%;
+        height: auto;
+        @extend .center;
+        align-items: flex-start;
+        flex-direction: column;
+        .rec-comp {
+            width: 100%;
+            height: auto;
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            > div {
+                &:nth-of-type(1) {
+                    width: 18%;
+                    @extend .center;
+                    border-radius: 15px;
+                    background-color: #68686875;
+                    backdrop-filter: blur(6px);
+                    margin: 0 10px;
+                    span {
+                        font-size: 1.4rem;
+                        color: #acacac;
+                    }
+                }
+                &:nth-of-type(2) {
+                    width: 62%;
+                    h2 {
+                        @extend .main-text;
+                        font-size: 1rem;
+                        margin: 5px 0;
+                    }
+                    h3 {
+                        @extend .sec-text;
+                    }
+                }
+            }
+            h4 {
+                width: 20%;
+                @extend .prices;
+            }
+        }
+    }
+}
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 0 $mainColor
+    }
+    100% {
+        box-shadow: 0 0 2em 0 #60a9a27c;
+    }
+}

@@ -1,0 +1,73 @@
+$mainColor: #60A9A2;
+$secColor: #506396;
+$font: 'Roboto', sans-serif;
+$mainFontColor: #ffffff;
+$secFontColor: #9da2b6;
+$background: #171721;
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text {
+    font-size: 2.2rem;
+    color: $mainFontColor;
+    font-family: $font;
+}
+.sec-text {
+    font-size: 0.8rem;
+    color: $secFontColor;
+    font-family: $font;
+}
+#history {
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    &:last-child {
+        justify-self: center
+    }
+    section {
+        @extend .center;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 20px 0;
+        .his-rods {
+            @extend .center;
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+            figure {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 40px;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &:nth-last-of-type(odd) > div {
+                background: transparent;
+            }
+            &:nth-last-of-type(even) > div {
+                background: linear-gradient(90deg, $background, #60a9a250, #50639641, $background);
+            }
+            div {
+                @extend .center;
+                justify-content: space-evenly;
+                width: calc(100% - 70px);
+                height: 100%;
+                h3 {
+                    @extend .sec-text;
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
